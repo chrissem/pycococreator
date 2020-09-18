@@ -107,7 +107,7 @@ def main():
                     
                     annotation_info = pycococreatortools.create_annotation_info(
                         segmentation_id, image_id, category_info, binary_mask,
-                        image.size, tolerance=2)
+                        image.size, tolerance=0)
 
                     if annotation_info is not None:
                         coco_output["annotations"].append(annotation_info)
